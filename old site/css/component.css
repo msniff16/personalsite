@@ -1,0 +1,221 @@
+/* Set all parents to full height */
+html, body,
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section {
+	height: 100%;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50%
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 25%;
+	width: 26px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 16px;
+	height: 16px;
+	outline: none;
+	border: 2px solid rgb(217,217,217);
+	margin: 25px 0;
+	border-radius: 50%;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgb(217,217,217);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: rgb(217,217,217);
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+		/* background-attachment: fixed; */
+}
+
+#logo {
+	width: 270px;
+	float: left;
+}
+
+#fbsection1 {
+	overflow: hidden;
+	background-image: url(../images/1.jpg);
+}
+
+#fbsection2 {
+	overflow: hidden;
+	background-color: rgb(247,248,249);
+	height: auto!important;
+	padding-bottom: 40px;
+}
+
+#fbsection3 {
+	background-color: rgb(255,255,255);
+	overflow: hidden;
+	height: auto!important;
+	padding-bottom: 40px;
+}
+
+#fbsection4 {
+	background-color: rgb(247,248,249);
+	overflow: hidden;
+	height: auto!important;
+	padding-bottom: 40px;
+}
+
+#fbsection5 {
+	background-color: rgb(255,255,255);
+	overflow: hidden;
+	height: auto!important;
+	padding-bottom: 40px;
+}
+
+#fbsection6 {
+	background-color: rgb(247,248,249);
+	overflow: hidden;
+	height: auto!important;
+	padding-bottom: 40px;
+}
+
+.bigFont {
+	width: 100%;
+	text-align: left;
+	margin-top: 30px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.bigFont h1 {
+	font-size: 45px;
+	font-weight: 300;
+	width: 300px;
+	overflow: hidden;
+}
+
+.bigFont p {
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: -20px;
+}
+
+.middleImage {
+	width:140px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.greeting {
+	position: absolute;
+	top: 150px;
+	left: 5%;
+	padding-left: 25px;
+	width: 60%;
+}
+
+.contentDivWhite {
+	width:100%;
+	min-height:100px;
+	float: left;
+	border-top: 1px solid rgb(217,217,217);
+}
+
+.contentDivTan {
+	width:100%;
+	min-height:100px;
+	float: left;
+	border-top: 1px solid rgb(217,217,217);
+}
+
+.insideWrap {
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+	color: rgb(80,80,80);
+}
+
+.insideWrap > h1 {
+	font-weight: 300;
+	font-size: 40px;
+}
+
+.insideWrap p {
+	font-size: 18px;
+	font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	letter-spacing: normal;
+	line-height: 33px;
+	color: rgb(80,80,80);
+	padding-bottom: 20px;
+}
+
+.insideWrap p a {
+	color: rgb(80,80,80);
+}
+
+.photoBox {
+	width:310px;
+	height:220px;
+	float: left;
+	margin-right: 25px;
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.photoBox:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.projBox {
+	width:280px;
+	margin-right: 20px;
+	height:200px;
+	float: left;
+}
+
+.transNav {
+	background-color: rgba(105,105,105,0.2)!important;
+	transition: transform 1s, background-color 1s;
+    -moz-transition: -moz-transform 1s, background-color 1s;
+    -webkit-transition: -webkit-transform 1s, background-color 1s;
+    -o-transition: -o-transform 1s, background-color 1s;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	font-size: 13px;
+	color: rgb(120,120,120);
+}
+
+.footer p {
+	float: left;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+.link:hover {
+	opacity: 0.8;
+}
+
+
+
